@@ -17,7 +17,7 @@ services:
       - "2000:2000/udp"
     networks:
       calcnet:
-        ipv4_address: 172.19.20.1
+        ipv4_address: 172.10.20.1
 
   calc:
     build:
@@ -42,7 +42,7 @@ services:
       - "8080:8080"
     networks:
       calcnet:
-        ipv4_address: 172.19.0.100
+        ipv4_address: 172.10.0.100
 
   postfix:
     build:
@@ -59,7 +59,7 @@ services:
       - "9090:9090"  
     networks:
       calcnet:
-        ipv4_address: 172.19.0.200
+        ipv4_address: 172.10.0.200
 
   add:
     build:
@@ -76,7 +76,7 @@ services:
       - "8081:8081"  
     networks:
       calcnet:
-        ipv4_address: 172.19.10.1
+        ipv4_address: 172.10.10.1
 
   subtract:
     build:
@@ -93,7 +93,7 @@ services:
       - "8082:8082"  
     networks:
       calcnet:
-        ipv4_address: 172.19.10.2
+        ipv4_address: 172.10.10.2
 
   multiply:
     build:
@@ -110,7 +110,7 @@ services:
       - "8083:8083"  
     networks:
       calcnet:
-        ipv4_address: 172.19.10.3
+        ipv4_address: 172.10.10.3
 
   divide:
     build:
@@ -127,7 +127,7 @@ services:
       - "8084:8084"  
     networks:
       calcnet:
-        ipv4_address: 172.19.10.4
+        ipv4_address: 172.10.10.4
 
   power:
     build:
@@ -144,7 +144,7 @@ services:
       - "8085:8085"  
     networks:
       calcnet:
-        ipv4_address: 172.19.10.5
+        ipv4_address: 172.10.10.5
 
 networks:
   calcnet:
@@ -152,4 +152,4 @@ networks:
     ipam:
       driver: default
       config:
-        - subnet: 172.19.0.0/16
+        - subnet: 172.10.0.0/16

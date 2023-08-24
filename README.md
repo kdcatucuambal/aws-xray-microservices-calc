@@ -239,17 +239,17 @@ CALC        | STATUS: 200
 CALC        | HEADERS: {"x-powered-by":"Express","date":"Mon, 15 Jun 2020 03:16:49 GMT","connection":"close","transfer-encoding":"chunked"}
 CALC        | BODY: 5 3 + 2 / 3 ^
 CALC        | postfix:5 3 + 2 / 3 ^
-CALC        | http request host:port -> 172.19.10.1:8081
+CALC        | http request host:port -> 172.10.10.1:8081
 ADD         | adding...
 ADD         | 3+5=8
 CALC        | STATUS: 200
 CALC        | result=8
-CALC        | http request host:port -> 172.19.10.4:8084
+CALC        | http request host:port -> 172.10.10.4:8084
 DIVIDE      | dividing...
 DIVIDE      | 8/2=4
 CALC        | STATUS: 200
 CALC        | result=4
-CALC        | http request host:port -> 172.19.10.5:8085
+CALC        | http request host:port -> 172.10.10.5:8085
 POWER       | powering...
 POWER       | 4^3=64
 CALC        | STATUS: 200
